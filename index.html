@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Company Intranet</title>
+<style>
+body { font-family: Verdana, Arial, sans-serif; color: #1D2B2F; background: #FFFFFF; margin: 0; }
+h1 { font-size: 26px; margin: 0; color: #FFFFFF; }
+h2 { font-size: 18px; color: #0B3C49; margin: 0 0 6px 0; }
+h3 { font-size: 15px; color: #0B3C49; margin: 12px 0 2px 0; }
+p, li, td, th { font-size: 14px; line-height: 1.6; }
+a { color: #0B3C49; }
+.bar { background: #0B3C49; padding: 24px 32px; }
+.sub { color: #BFD8DD; font-size: 14px; margin: 4px 0 0 0; }
+.accent { background: #F2A541; height: 4px; }
+.menu { background: #EAF1F2; padding: 8px 32px; font-size: 13px; }
+.wrap { padding: 20px 32px; }
+.panel { background: #EAF1F2; padding: 12px 16px; }
+.foot { background: #EAF1F2; padding: 12px 32px; font-size: 12px; color: #4A5E63; }
+</style>
+</head>
+<body>
+ 
+<div class="bar">
+<h1>Company Intranet</h1>
+<p class="sub">Welcome to the Company Intranet</p>
+</div>
+<div class="accent"></div>
+<div class="menu">
+<a href="#news">Announcements</a> |
+<a href="#links">Quick links</a> |
+<a href="#teams">Departments</a> |
+<a href="#help">IT help</a> |
+<a href="#policies">Policies</a> |
+<a href="#faq">FAQ</a> |
+<a href="#status">Network status</a>
+</div>
+ 
+<div class="wrap">
+ 
+<h2>Welcome</h2>
+<p>This is the company&apos;s internal home page. It is only reachable from inside the office network. If you can read this page by typing <b>intranet.company.local</b>, your computer received its settings automatically from the DHCP server and the DNS server found this web server for you. No IP address needed.</p>
+ 
+<a name="news"></a>
+<h2>Announcements</h2>
+<table width="100%" cellpadding="8" cellspacing="0">
+<tr valign="top"><td class="panel" width="100%">
+<h3>Plug in and go</h3>
+<p>New computers no longer need a manual IP address. Connect the network cable, set the adapter to obtain an address automatically, and you are online within seconds.</p>
+<h3>Use names, not numbers</h3>
+<p>Open the intranet with <b>intranet.company.local</b>. If the server ever moves, the name stays the same, so your bookmarks keep working.</p>
+<h3>Report network problems early</h3>
+<p>If a page will not load or your computer shows an address starting with 169.254, follow the steps in the IT help section below, then contact the IT team.</p>
+</td></tr>
+</table>
+ 
+<a name="links"></a>
+<h2>Quick links</h2>
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr><th align="left">Link</th><th align="left">What you will find</th></tr>
+<tr><td><a href="#teams">Departments</a></td><td>Who to contact for what</td></tr>
+<tr><td><a href="#help">IT help</a></td><td>Fix common network problems yourself</td></tr>
+<tr><td><a href="#policies">Policies</a></td><td>Rules for passwords, devices and data</td></tr>
+<tr><td><a href="#faq">FAQ</a></td><td>Short answers to common questions</td></tr>
+<tr><td><a href="#status">Network status</a></td><td>Addresses and services on the office network</td></tr>
+</table>
+ 
+<a name="teams"></a>
+<h2>Departments</h2>
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr><th align="left">Team</th><th align="left">Helps with</th><th align="left">Contact</th></tr>
+<tr><td>Human resources</td><td>Leave, onboarding, employee records</td><td>hr@company.local</td></tr>
+<tr><td>IT support</td><td>Computers, network access, passwords</td><td>it-help@company.local</td></tr>
+<tr><td>Finance</td><td>Expenses, invoices, purchase requests</td><td>finance@company.local</td></tr>
+<tr><td>Operations</td><td>Office, equipment, facilities</td><td>operations@company.local</td></tr>
+</table>
+ 
+<a name="help"></a>
+<h2>IT help: my computer is not online</h2>
+<ol>
+<li>Check that the network cable is firmly plugged in and the link light is on.</li>
+<li>Make sure the network adapter is set to <b>obtain an IP address automatically</b>.</li>
+<li>Open the command prompt and run <b>ipconfig /all</b>. A good address starts with 192.168.10.</li>
+<li>If the address starts with 169.254, the computer did not reach the DHCP server. Reconnect the cable and try again.</li>
+<li>Run <b>ping 192.168.10.1</b>. Replies mean you can reach the router.</li>
+<li>Run <b>nslookup intranet.company.local</b>. If it fails but the ping works, tell IT that DNS is not answering.</li>
+</ol>
+ 
+<a name="policies"></a>
+<h2>Policies</h2>
+<table width="100%" cellpadding="8" cellspacing="0">
+<tr valign="top"><td class="panel">
+<h3>Passwords</h3>
+<p>Use a long, unique password and never share it. IT will never ask for your password.</p>
+<h3>Network use</h3>
+<p>Do not assign yourself a fixed IP address. Fixed addresses are reserved for the router and servers, and a duplicate address can take another computer offline.</p>
+<h3>Company data</h3>
+<p>Keep work files on company storage, not on personal devices.</p>
+</td></tr>
+</table>
+ 
+<a name="faq"></a>
+<h2>FAQ</h2>
+<h3>Why does my computer get a different address from my colleague&apos;s?</h3>
+<p>The DHCP server gives every computer the next free address from its pool, so each one is different. That is how duplicate addresses are avoided.</p>
+<h3>Will my address change?</h3>
+<p>It can. The address is leased for a period of time and renewed automatically. The intranet name stays the same, so you never need to track it.</p>
+<h3>Why can I open the intranet by name but not by a website on the internet?</h3>
+<p>This office network is isolated. The intranet name is known only to the company DNS server.</p>
+ 
+<a name="status"></a>
+<h2>Network status</h2>
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr><th align="left">Service</th><th align="left">Address</th><th align="left">Purpose</th></tr>
+<tr><td>Router (gateway)</td><td>192.168.10.1</td><td>Connects the office network</td></tr>
+<tr><td>DHCP server</td><td>192.168.10.2</td><td>Assigns addresses automatically</td></tr>
+<tr><td>DNS/WEB server</td><td>192.168.10.3</td><td>Turns names into addresses</td></tr>
+<tr><td>Employee computers</td><td>192.168.10.100 to .200</td><td>Addresses handed out by DHCP</td></tr>
+</table>
+ 
+</div>
+ 
+<div class="foot">Company Intranet &middot; Internal use only &middot; Served by the internal web server</div>
+ 
+</body>
+</html>
+ 
