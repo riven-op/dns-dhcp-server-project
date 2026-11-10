@@ -11,10 +11,6 @@ This project implements centralized DHCP and DNS services using Cisco Packet Tra
 - **Server 1 – DHCP:** Automatically assigns IP addresses and network configuration to employee computers.
 - **Server 2 – DNS & HTTP:** Resolves `intranet.company.local` to the web server's IP address and hosts the company's internal website.
 
-## Network Topology
-
-![Network Topology](01-topology.png)
-
 ## IP Addressing Scheme
 
 | Device | IP Address |
