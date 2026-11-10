@@ -45,6 +45,7 @@ The following tests are performed:
 - DHCP lease verification using `ipconfig`.
 - Router connectivity using `ping`.
 - Intranet accessibility using the PC web browser.
+- Desktop->browser,Enter` http://intranet.company.local `
 
 Screenshots of the actual implementation are available in the `Screenshots/` directory.
 
